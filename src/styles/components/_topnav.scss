@@ -1,0 +1,42 @@
+.topnav__content {
+    overflow: hidden;
+    background-color: $secondary;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .topnav__content .search-container {
+    float: right;
+    
+  }
+  
+
+  .topnav__content input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    width:400px;
+    height: auto;
+    border-radius: 15px;
+  }
+ 
+  
+  .topnav__content .search-container button {
+    float: right;
+    display:block;    
+    height: 40px;
+    width: 60px;    
+    background: $primary;
+    border: 1px solid $primary;
+    color: white;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    &:hover{
+        background: #ccc;
+
+    }
+  }
+  
+  

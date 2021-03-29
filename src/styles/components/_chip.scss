@@ -1,0 +1,44 @@
+.chip {
+    display: inline-block;
+    padding: 0 25px;
+    height: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    border-radius: 25px;
+    font-size: 10px;   
+    color: white; 
+    text-align: center;
+    font-weight:bold;
+    text-transform: capitalize;
+   margin-left: 3px;
+    
+  }
+
+  .chip__green{
+    background-color:green;
+    
+  }
+
+  .chip__poison{
+    background-color:#9368b0;
+  }
+
+  .chip__orange{
+    background-color:#f49d40;
+  }
+
+
+  .chip__blue{
+    background-color:#aac8fe;
+  }
+
+  .chip__gray{
+    background-color:grey;
+  }
+
+  .chip__water{
+    background-color:aqua
+  }
+
+
+

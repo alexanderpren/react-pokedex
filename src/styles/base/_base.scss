@@ -1,0 +1,67 @@
+* {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0px;
+}
+
+html,
+body {
+  background: rgb(242, 244, 255);
+  background: linear-gradient(
+    280deg,
+    rgba(242, 244, 255, 1) 0%,
+    rgba(251, 252, 255, 1) 35%
+  );
+  font-size: 1.6rem;
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+p{text-align: center}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+main {
+  width: 100%;
+}
+
+.mt-5 {
+  margin-top: 20px;
+}
+
+.mt-10 {
+  margin-top: 40px;
+}
+
+.mb-1 {
+  margin-bottom: 5px;
+}
+
+.mb-2 {
+  margin-bottom: 10px;
+}
+
+.mb-5 {
+  margin-bottom: 20px;
+}
+.pointer {
+  cursor: pointer;
+}
