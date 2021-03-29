@@ -77,3 +77,26 @@
 .card__pokemon-img {
   width: 100%;
 }
+
+
+.card_pokemon-foot{
+  display:flex;
+  justify-content:space-between;
+}
+
+
+.card__content-detail {
+  
+  background-color: #fff;
+  padding: 1rem;
+  width: 50%;
+  border-radius: 16px;
+  margin: 1rem 0;
+}
+
+.card__pokemon-name-detail{
+
+  font-size: 3rem;
+  text-transform: capitalize;
+  color: $text-color;
+}

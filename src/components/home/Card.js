@@ -12,7 +12,7 @@ export const Card = ({ index, state }) => {
 
   let current_index = parseInt(index);
 
-   const pokemonName = state[current_index].name;
+  const pokemonName = state[current_index].name;
   const url_img_default =
     state[current_index].data.detail.sprites.other["official-artwork"]
       .front_default;

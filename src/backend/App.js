@@ -6,7 +6,7 @@ const getList = () => {
  
    
     return axios
-      .get("https://pokeapi.co/api/v2/pokemon/?limit=350")
+      .get("https://pokeapi.co/api/v2/pokemon/?limit=50")
       .then((Response) => {
         return {
           list: Response.data,
