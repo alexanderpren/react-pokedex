@@ -1,7 +1,10 @@
+.chip__container{
+  display:flex;
+  flex-direction: column;
+}
+
 .chip {
-    /* display: inline-block; */
-    
-    padding: 0 25px;
+   
     height: 10px;    
     line-height: 10px;
     border-radius: 25px;
@@ -10,26 +13,35 @@
     text-align: center;
     font-weight:bold;
     text-transform: capitalize;
-    margin-left: 3px;
-    
+    margin-left: 3px;  
+      
   }
 
 
   @media  (min-width: 768px) {
-    .chip {
-      display:flex;
-      font-size: 10px;  
-      line-height: 20px;
+    .chip {      
+      font-size: 50px;  
+      line-height: 30x;
       display: inline-block;
+      padding: 0 25px;
+      display:flex;
+    }
+
+    .chip__container{
+      flex-direction: row;
     }
   }
 
   @media  (min-width: 468px) {
-    .chip {
-      display:flex;
-      font-size: 10px;  
+    .chip {  
+      height: 100%;      
+      width: 100%;
+      font-size: 18px;  
       line-height: 20px;
-      display: inline-block;
+      display:flex;
+    }
+    .chip__container{
+      flex-direction: row;
     }
   }
   .chip__green{

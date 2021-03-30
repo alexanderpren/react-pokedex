@@ -49,10 +49,10 @@ export default function ChipButton({ item, index}) {
 
 export const Chip = ({ types }) => {
   return (
-    <div style={{ display: "flex" }}>
+    <div className="chip__container">
       {types !== undefined
         ? types.map((item, index) => {
-            return <ChipButton key={index} item={item} index={index}  />;
+            return <div><ChipButton key={index} item={item} index={index}  /></div> ;
           })
         : null}
     </div>
