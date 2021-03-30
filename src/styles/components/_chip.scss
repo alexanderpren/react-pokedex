@@ -1,19 +1,37 @@
 .chip {
-    display: inline-block;
+    /* display: inline-block; */
+    
     padding: 0 25px;
-    height: 30px;
-    font-size: 16px;
-    line-height: 30px;
+    height: 10px;    
+    line-height: 10px;
     border-radius: 25px;
-    font-size: 10px;   
+    font-size: 5px;   
     color: white; 
     text-align: center;
     font-weight:bold;
     text-transform: capitalize;
-   margin-left: 3px;
+    margin-left: 3px;
     
   }
 
+
+  @media  (min-width: 768px) {
+    .chip {
+      display:flex;
+      font-size: 10px;  
+      line-height: 20px;
+      display: inline-block;
+    }
+  }
+
+  @media  (min-width: 468px) {
+    .chip {
+      display:flex;
+      font-size: 10px;  
+      line-height: 20px;
+      display: inline-block;
+    }
+  }
   .chip__green{
     background-color:green;
     

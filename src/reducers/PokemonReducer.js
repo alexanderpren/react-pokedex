@@ -10,6 +10,9 @@ const initialState = [
 export const PokemonReducer = (state = initialState, action) => {
   switch (action.type) {
     case types.set_array: {
+
+console.log(action.payload) 
+
       return {
         ...state,
         arrayPokemons: [...action.payload],

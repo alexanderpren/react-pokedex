@@ -75,8 +75,22 @@
   }
 }
 .card__pokemon-img {
-  width: 100%;
+  width: 50%;
 }
+
+
+@media (min-width: 468px) {
+  .card__pokemon-img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .card__pokemon-img {
+    width: 100%;
+  }
+}
+
 
 
 .card_pokemon-foot{
