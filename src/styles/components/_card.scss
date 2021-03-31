@@ -112,13 +112,25 @@
 }
 
 .card__pokemon-name-detail {
-  font-size: 5rem;
+  font-size: 2rem;
   text-transform: capitalize;
   color: $text-color;
   text-align: left;
   font-weight: bold;
   margin: 3rem;
 
+}
+@media (min-width: 768px) {
+  .card__pokemon-name-detail {
+    font-size: 5rem;
+    text-transform: capitalize;
+    color: $text-color;
+    text-align: left;
+    font-weight: bold;
+    margin: 3rem;
+  
+  }
+    
 }
 
 
@@ -134,6 +146,13 @@
     width: 20%;
   }
 }
+
+
+.card__info-title{
+  color: $text-color;
+  margin-left: 0;
+}
+
 @media (min-width: 768px) {
   .card__info-title {
     font-size:25px;
@@ -143,7 +162,9 @@
     
   }
 }
-
+.card__pokemon-id-detail{
+  text-align: left;
+}
 
 @media (min-width: 768px) {
   .card__pokemon-id-detail {

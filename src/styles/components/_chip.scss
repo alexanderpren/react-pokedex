@@ -3,14 +3,25 @@
   flex-direction: row;
   justify-content: space-between;
 }
- 
+
+.chip__container-info {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (min-width: 768px) {
+  .chip__container-info {
+    justify-content: left;
+    margin-left: 35px;
+  }
+}
 
 .chip {
   height: 20px;
   line-height: 20px;
   border-radius: 25px;
   font-size: 15px;
-  width:100%;
+  width: 100%;
   color: white;
   text-align: center;
   font-weight: bold;
@@ -29,7 +40,7 @@
 
   .chip__container {
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
   }
 }
 
@@ -43,7 +54,7 @@
   }
   .chip__container {
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
   }
 }
 .chip__green {

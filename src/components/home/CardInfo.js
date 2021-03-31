@@ -1,5 +1,5 @@
 import React from "react";
-import { Chip } from "./Chip";
+import {ChipInfo} from "./ChipInfo"
 
 
 export const CardInfo = ({ pokemonDetail}) => {
@@ -12,7 +12,7 @@ export const CardInfo = ({ pokemonDetail}) => {
     <div className="card__info card__shadow">
     <div className="card__text-detail">
         <p className="card__pokemon-name-detail">{pokemonDetail.name}</p>
-        <Chip types={types} />
+        <ChipInfo types={types} />
         <div className="card__info-title mt-10">Pokedex Number</div>
         <p className="card__pokemon-id-detail">{id_pokemon}</p>
         <hr className="line mt-10"></hr>
