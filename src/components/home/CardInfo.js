@@ -13,16 +13,16 @@ export const CardInfo = ({ pokemonDetail}) => {
     <div className="card__text-detail">
         <p className="card__pokemon-name-detail">{pokemonDetail.name}</p>
         <Chip types={types} />
-        <h2>Pokedex Number</h2>
-        <p className="card__pokemon-id mt-5">00{id_pokemon}</p>
-        <hr className="line"></hr>
-        <h2>Height</h2>
-        <p className="card__pokemon-name">{height}</p>
+        <div className="card__info-title mt-10">Pokedex Number</div>
+        <p className="card__pokemon-id-detail">{id_pokemon}</p>
+        <hr className="line mt-10"></hr>
+       <div className="card__info-title mt-10">Height</div>
+        <p className="card__pokemon-id-detail">{height}</p>
 
-        <hr></hr>
-        <h2>Weight</h2>
-        <p className="card__pokemon-name">{weight}</p>
-        <hr></hr>
+        <hr className="mt-10"></hr>
+        <div className="card__info-title mt-10">Weight</div>
+        <p className="card__pokemon-id-detail">{weight}</p>
+        <hr className="mt-10"></hr>
         <h2>Shyny</h2>
         <div className="card_pokemon-foot">
         <img

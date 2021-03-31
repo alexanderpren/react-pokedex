@@ -1,14 +1,16 @@
 .chip__container {
   display: flex;
-  flex-direction: column;
-
+  flex-direction: row;
+  justify-content: space-between;
 }
+ 
 
 .chip {
-  height: 10px;
-  line-height: 10px;
+  height: 20px;
+  line-height: 20px;
   border-radius: 25px;
-  font-size: 5px;
+  font-size: 15px;
+  width:100%;
   color: white;
   text-align: center;
   font-weight: bold;
@@ -27,7 +29,7 @@
 
   .chip__container {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content:center;
   }
 }
 
@@ -41,14 +43,17 @@
   }
   .chip__container {
     flex-direction: row;
+    justify-content:center;
   }
 }
 .chip__green {
   background-color: green;
+  margin-left: 3px;
 }
 
 .chip__poison {
   background-color: #9368b0;
+  margin-right: 3px;
 }
 
 .chip__orange {

@@ -2,7 +2,7 @@
   display: flex;
   background-color: #fff;
   padding: 1rem;
-  width: 50%;
+  width: 80%;
   border-radius: 16px;
   margin: 1rem 0;
 }
@@ -81,7 +81,7 @@
   }
 }
 .card__pokemon-img {
-  width: 50%;
+  width: 80%;
 }
 
 @media (min-width: 468px) {
@@ -112,7 +112,7 @@
 }
 
 .card__pokemon-name-detail {
-  font-size: 3rem;
+  font-size: 5rem;
   text-transform: capitalize;
   color: $text-color;
   text-align: left;
@@ -134,3 +134,24 @@
     width: 20%;
   }
 }
+@media (min-width: 768px) {
+  .card__info-title {
+    font-size:25px;
+    font-weight: bold;
+    color: $text-color;
+    margin-left: 35px;
+    
+  }
+}
+
+
+@media (min-width: 768px) {
+  .card__pokemon-id-detail {
+    font-size:25px;
+    text-align: left;
+    margin-left:35px;
+    color: $text-color;
+   
+  }}
+    
+  
