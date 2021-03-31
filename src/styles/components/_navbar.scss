@@ -1,0 +1,11 @@
+.navbar__pagination {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 468px) {
+  .navbar__pagination {
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+}

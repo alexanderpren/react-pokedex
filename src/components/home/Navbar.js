@@ -1,9 +1,9 @@
-import React,{useState,useEffect} from 'react'
-import {back,filter} from "../../actions/pokemon"
+import React from 'react'
+import {back} from "../../actions/pokemon"
 import {useDispatch} from 'react-redux'
 
 export const Navbar = ({open,reportChange}) => { 
-  const [word,setWord] = useState(undefined)
+/*   const [word,setWord] = useState(undefined) */
   const dispatch = useDispatch();
   
   const handleClose =() => {
@@ -19,11 +19,11 @@ export const Navbar = ({open,reportChange}) => {
   }
   
 
-  useEffect(() => {
+/*   useEffect(() => {
     if (word !== undefined){
       dispatch(filter(word));
     }
-  }, [dispatch,word]);
+  }, [dispatch,word]); */
   
 
 
@@ -42,8 +42,7 @@ export const Navbar = ({open,reportChange}) => {
           <input
             type="text"
             placeholder="Search"
-            name="search"
-            value={word}
+            name="search"           
             onChange={handleChange}
           ></input>
           <button type="submit">

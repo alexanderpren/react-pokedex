@@ -1,74 +1,68 @@
-.chip__container{
-  display:flex;
+.chip__container {
+  display: flex;
   flex-direction: column;
+
 }
 
 .chip {
-   
-    height: 10px;    
-    line-height: 10px;
-    border-radius: 25px;
-    font-size: 5px;   
-    color: white; 
-    text-align: center;
-    font-weight:bold;
-    text-transform: capitalize;
-    margin-left: 3px;  
-      
+  height: 10px;
+  line-height: 10px;
+  border-radius: 25px;
+  font-size: 5px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-left: 3px;
+}
+
+@media (min-width: 768px) {
+  .chip {
+    font-size: 50px;
+    display: inline-block;
+    justify-content: center;
+    margin: 0.5rem;
+    padding: 0.5rem;
   }
 
-
-  @media  (min-width: 768px) {
-    .chip {      
-      font-size: 50px;  
-      line-height: 30x;
-      display: inline-block;
-      padding: 0 25px;
-      display:flex;
-    }
-
-    .chip__container{
-      flex-direction: row;
-    }
+  .chip__container {
+    flex-direction: row;
+    justify-content: space-around;
   }
+}
 
-  @media  (min-width: 468px) {
-    .chip {  
-      height: 100%;      
-      width: 100%;
-      font-size: 18px;  
-      line-height: 20px;
-      display:flex;
-    }
-    .chip__container{
-      flex-direction: row;
-    }
+@media (min-width: 468px) {
+  .chip {
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    line-height: 20px;
+    justify-content: center;
   }
-  .chip__green{
-    background-color:green;
-    
+  .chip__container {
+    flex-direction: row;
   }
+}
+.chip__green {
+  background-color: green;
+}
 
-  .chip__poison{
-    background-color:#9368b0;
-  }
+.chip__poison {
+  background-color: #9368b0;
+}
 
-  .chip__orange{
-    background-color:#f49d40;
-  }
+.chip__orange {
+  background-color: #f49d40;
+}
 
+.chip__blue {
+  background-color: #aac8fe;
+}
 
-  .chip__blue{
-    background-color:#aac8fe;
-  }
+.chip__gray {
+  background-color: grey;
+}
 
-  .chip__gray{
-    background-color:grey;
-  }
-
-  .chip__water{
-    background-color:aqua
-  }
-
-
-
+.chip__water {
+  background-color: aqua;
+}

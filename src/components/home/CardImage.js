@@ -3,10 +3,10 @@ import React from "react";
 export const CardImage = ({ pokemonDetail }) => {
   console.log(pokemonDetail);
   return (
-    <div className="card__content-detail card__shadow">
-      <div>
+    <div className="card__image card__shadow">
+      <div className="">
         <img
-          className="card__pokemon-img"
+          className=""
           src={
             pokemonDetail.data.detail.sprites.other["official-artwork"]
               .front_default
