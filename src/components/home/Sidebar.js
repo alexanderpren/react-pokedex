@@ -26,7 +26,7 @@ export const Sidebar = () => {
             <div className="mt-5">
               <h3 className="title">ashk123</h3>
             </div>
-            <h3>Work hard on your test</h3>
+            <h4 className="color__white">"I worked hard in my test:)"</h4>
 
             <footer>
               {" "}

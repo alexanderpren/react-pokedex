@@ -1,7 +1,8 @@
 import {types} from "../constants/types"
 
-export const getPokemons = () => ({
+export const getPokemons = (url = "https://pokeapi.co/api/v2/pokemon/" ) => ({
   type: types.get_array,
+  payload: {url: url},
 });
 
 export const filter = (searchWord) => ({
@@ -14,9 +15,9 @@ export const getDetail = (id) => ({
   payload: {id: id},
 });
 
-export const setListPokemons = (array) => ({
+export const setListPokemons = (array, next, previous) => ({
   type: types.set_array,
-  payload: array,
+  payload: { array: array, next: next, previous: previous },
 });
  
 

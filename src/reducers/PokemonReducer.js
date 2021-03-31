@@ -4,18 +4,21 @@ const initialState = [
     arrayPokemons: [],
     detail: null,
     open: false,
+    next: null,
+    previous: null,
   },
 ];
 
 export const PokemonReducer = (state = initialState, action) => {
   switch (action.type) {
     case types.set_array: {
-
-console.log(action.payload) 
-
+      
       return {
         ...state,
-        arrayPokemons: [...action.payload],
+        arrayPokemons: [...action.payload.array],
+        next:action.payload.next,
+        previous:action.payload.previous,
+
       };
     }
     case types.filter: {

@@ -2,13 +2,13 @@ import { all, call, fork, takeEvery, put } from "redux-saga/effects";
 import { app } from "./../backend/App";
 import { types } from "../constants/types";
 import { setListPokemons, showAlert } from "../actions/pokemon";
-const arrayPokemons = [];
+let arrayPokemons = [];
 
 /// getListPokemons
 
-const getListRequest = async () => {
+const getListRequest = async (url) => {
   return await app
-    .getList()
+    .getList(url)
     .then((list) => list)
     .catch((error) => error);
 };
@@ -25,21 +25,25 @@ const getDetailPokemon = async (item) => {
 
 function* getListFromRequest({ payload }) {
   try {
-    const response = yield call(getListRequest);
-    
+    const {url} = payload
+    arrayPokemons = []
+    const response = yield call(getListRequest,url);
 
     if (response.message) {
       yield put(showAlert("ALERT_ERROR", response.message));
     } else {
       try {
         if (response.list.results) {
+          const next = response.list.next;
+          const previous = response.list.previous;
+
           yield all(
             response.list.results.map((item) => {
               return call(getDetailPokemon, item);
             })
           );
 
-          yield put(setListPokemons(arrayPokemons));
+          yield put(setListPokemons(arrayPokemons, next, previous));
         } else {
           yield put(showAlert("ALERT_ERROR", response.message));
         }
