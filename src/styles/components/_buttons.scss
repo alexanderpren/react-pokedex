@@ -27,25 +27,38 @@
   }
 }
 
-.btn-back{
+.btn-back {
   font-weight: bold;
   background-color: $primary;
   width: 100%;
   font-size: 25px;
   border-radius: 25px;
-
-
 }
 
-.btn-logout {
+
+.btn__logout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  height: 50px;
+  font-size: 20px;
   text-transform: uppercase;
+  color: white;
   font-weight: bold;
-  bottom: 0;
+  margin-top: 50vh;
   background-color: #8c9ae3;
   border-radius: 10px;
-  &:hover {
-    background-color: darken($color: $primary, $amount: 15);
-  }
+ 
+}
+button i {
+  margin-right: auto;
+}
+button span {
+  margin-right: auto;
+}
+.icon__logout {
+  align-self: right;
 }
 
 .icon-left {
